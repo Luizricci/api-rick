@@ -1,5 +1,6 @@
 .container{
     display: flex;
+    flex-direction: column;
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -8,6 +9,12 @@
     padding: 2rem;
 }
 
+.title{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 .grid{
     display: flex;
     flex-direction: row;
@@ -16,4 +23,52 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
+}
+.searchContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.input{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    width: 300px;
+    font-size: 1rem;
+} 
+.button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover{
+    background-color: #0056b3;
+}
+.button-reset{
+    background-color: #dc3545;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button-reset:hover{
+    background-color: #c82333;
+}
+
+.notFound{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
 }

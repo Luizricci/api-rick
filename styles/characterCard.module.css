@@ -5,6 +5,7 @@
     border-radius: 15px;
     text-align: center;
     transition: transform 0.25s;
+    cursor: pointer;
 }
 .card:hover{
     transform: scale(1.1);
