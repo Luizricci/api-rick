@@ -52,6 +52,7 @@
 .button:hover{
     background-color: #0056b3;
 }
+
 .button-reset{
     background-color: #dc3545;
     padding: 0.5rem 1rem;
@@ -72,10 +73,63 @@
     text-align: center;
     margin-top: 2rem;
 }
+.navControls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.buttonNav{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buttonNav:hover{
+    background-color: #0652a3;
+}
+.buttonNav:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px #007BFF;;
+}
+
+.buttonNav:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+.pageIndicator{
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 @media screen and (max-width: 425px) {
     .searchContainer{
         display: flex;
         flex-direction: column;
+    }
+    .navControls {
+        flex-direction: column; 
+        gap: 0.5rem; 
+    }
+
+    .pageIndicatorContainer {
+        order: 1; 
+        text-align: center; 
+    }
+
+    .buttonNav {
+        width: 100%; 
     }
 }
