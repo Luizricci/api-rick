@@ -100,9 +100,7 @@ export default function Home() {
     useEffect(() => {
             fetchCharacters(search.trim(), page)
         },[page]);
-    useEffect(() => {
-            fetchCharacters(search, page)
-        },[search]);
+
     
 
 
