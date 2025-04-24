@@ -10,6 +10,7 @@ export default function CharacterCard( {character, onClick} ) {
                 className={styles.avatar}
                 width={125}
                 height={125}
+                priority
             />
             <h3 className={styles.title}>{character.name}</h3>
             <p>{character.status}</p>
